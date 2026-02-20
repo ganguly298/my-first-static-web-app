@@ -1,64 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First Static Web App</title>
-  styles.css
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Protocol | Future Awaits</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Navbar -->
-  <header class="nav">
-    <div class="logo">Saurav</div>
-    <nav class="links">
-      #aboutAbout</a>
-      #projectsProjects</a>
-      #contactContact</a>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>Hi, I’m Saurav 👋</h1>
-    <p>I’m learning Azure Static Web Apps and building cool websites.</p>
-    <div class="btn-row">
-      #projectsSee My Work</a>
-      #contactContact Me</a>
+    <!-- Animated background grid -->
+    <div class="background-grid"></div>
+    
+    <!-- Floating particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
     </div>
-  </section>
 
-  <!-- Cards Section -->
-  <section id="projects" class="section">
-    <h2>My Projects</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Project 1</h3>
-        <p>A simple portfolio page hosted on Azure Static Web Apps.</p>
-      </div>
-      <div class="card">
-        <h3>Project 2</h3>
-        <p>A small HTML + CSS landing page with a clean design.</p>
-      </div>
-      <div class="card">
-        <h3>Project 3</h3>
-        <p>A future project: adding JavaScript and API integration.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Main content -->
+    <main class="container">
+        <!-- Top section with glitch effect -->
+        <header class="header">
+            <div class="header-top">
+                <span class="badge badge-top">CLASSIFIED</span>
+                <span class="scan-line"></span>
+                <span class="badge badge-top">LEVEL_9</span>
+            </div>
+            
+            <div class="title-wrapper">
+                <h1 class="main-title glitch" data-text="NEXUS PROTOCOL">
+                    NEXUS PROTOCOL
+                </h1>
+                <div class="title-underline"></div>
+            </div>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I’m a beginner learning cloud and web hosting. My goal is to create professional websites and deploy them using Azure.
-    </p>
-  </section>
+            <div class="subtitle-wrapper">
+                <p class="subtitle">NEURAL INTEGRATION SYSTEM</p>
+                <p class="tagline">The future doesn't wait. Neither should you.</p>
+            </div>
+        </header>
 
-  <!-- Footer -->
-  <footer id="contact" class="footer">
-    <p>📧 Email: yourname@email.com</p>
-    <p>© 2026 Saurav. Built with Azure Static Web Apps.</p>
-  </footer>
+        <!-- Holographic display section -->
+        <section class="hologram-section">
+            <div class="hologram-container">
+                <div class="hologram-card">
+                    <div class="card-content">
+                        <div class="card-icon">⚡</div>
+                        <h3>Quantum Ready</h3>
+                        <p>Powered by next-generation architecture</p>
+                    </div>
+                    <div class="card-border"></div>
+                </div>
+
+                <div class="hologram-card delay-1">
+                    <div class="card-content">
+                        <div class="card-icon">🔮</div>
+                        <h3>AI Integrated</h3>
+                        <p>Advanced neural processing systems</p>
+                    </div>
+                    <div class="card-border"></div>
+                </div>
+
+                <div class="hologram-card delay-2">
+                    <div class="card-content">
+                        <div class="card-icon">🌐</div>
+                        <h3>Fully Distributed</h3>
+                        <p>Decentralized network infrastructure</p>
+                    </div>
+                    <div class="card-border"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Central visualization -->
+        <section class="visualization-section">
+            <div class="radar">
+                <div class="radar-ring"></div>
+                <div class="radar-ring"></div>
+                <div class="radar-ring"></div>
+                <div class="radar-center"></div>
+                <div class="radar-pulse"></div>
+            </div>
+        </section>
+
+        <!-- Data stream section -->
+        <section class="data-section">
+            <div class="data-column">
+                <div class="data-label">STATUS</div>
+                <div class="data-value">ONLINE</div>
+                <div class="status-indicator"></div>
+            </div>
+            <div class="data-column">
+                <div class="data-label">UPTIME</div>
+                <div class="data-value">99.99%</div>
+                <div class="status-indicator"></div>
+            </div>
+            <div class="data-column">
+                <div class="data-label">CAPACITY</div>
+                <div class="data-value">UNLIMITED</div>
+                <div class="status-indicator"></div>
+            </div>
+        </section>
+
+        <!-- Footer with CTA -->
+        <footer class="footer">
+            <button class="cta-button">INITIATE PROTOCOL</button>
+            <div class="footer-text">
+                <p>© 2024 Nexus Protocol | Advanced Systems Division</p>
+                <div class="footer-line"></div>
+                <p>Scan code to verify: <span class="code">NXS-7734-2024</span></p>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        // Glitch effect on load
+        window.addEventListener('load', () => {
+            const glitchTitle = document.querySelector('.glitch');
+            glitchTitle.style.animation = 'glitch-animation 0.6s';
+        });
+
+        // Interactive button
+        const ctaButton = document.querySelector('.cta-button');
+        ctaButton.addEventListener('click', () => {
+            ctaButton.style.animation = 'button-activate 0.5s';
+            setTimeout(() => {
+                ctaButton.style.animation = '';
+            }, 500);
+        });
+
+        // Parallax effect on mouse move
+        document.addEventListener('mousemove', (e) => {
+            const particles = document.querySelectorAll('.particle');
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            
+            particles.forEach((particle, index) => {
+                const speed = (index + 1) * 20;
+                particle.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
 </body>
 </html>
