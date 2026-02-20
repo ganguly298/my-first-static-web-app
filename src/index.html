@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Protocol | Future Awaits</title>
+    <title>Nexus Protocol - Sci-Fi Experience</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,15 +30,13 @@
         <!-- Top section with glitch effect -->
         <header class="header">
             <div class="header-top">
-                <span class="badge badge-top">CLASSIFIED</span>
+                <span class="badge">CLASSIFIED</span>
                 <span class="scan-line"></span>
-                <span class="badge badge-top">LEVEL_9</span>
+                <span class="badge">LEVEL_9</span>
             </div>
             
             <div class="title-wrapper">
-                <h1 class="main-title glitch" data-text="NEXUS PROTOCOL">
-                    NEXUS PROTOCOL
-                </h1>
+                <h1 class="main-title">NEXUS PROTOCOL</h1>
                 <div class="title-underline"></div>
             </div>
 
@@ -60,7 +58,7 @@
                     <div class="card-border"></div>
                 </div>
 
-                <div class="hologram-card delay-1">
+                <div class="hologram-card">
                     <div class="card-content">
                         <div class="card-icon">🔮</div>
                         <h3>AI Integrated</h3>
@@ -69,7 +67,7 @@
                     <div class="card-border"></div>
                 </div>
 
-                <div class="hologram-card delay-2">
+                <div class="hologram-card">
                     <div class="card-content">
                         <div class="card-icon">🌐</div>
                         <h3>Fully Distributed</h3>
@@ -122,18 +120,12 @@
     </main>
 
     <script>
-        // Glitch effect on load
-        window.addEventListener('load', () => {
-            const glitchTitle = document.querySelector('.glitch');
-            glitchTitle.style.animation = 'glitch-animation 0.6s';
-        });
-
         // Interactive button
         const ctaButton = document.querySelector('.cta-button');
         ctaButton.addEventListener('click', () => {
-            ctaButton.style.animation = 'button-activate 0.5s';
+            ctaButton.classList.add('activated');
             setTimeout(() => {
-                ctaButton.style.animation = '';
+                ctaButton.classList.remove('activated');
             }, 500);
         });
 
