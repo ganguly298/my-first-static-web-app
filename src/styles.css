@@ -1,21 +1,126 @@
+/* Basic reset */
 * {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-html, body {
   margin: 0;
-  border: 0;
   padding: 0;
-  background-color: #fff;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
 
-main {
-  margin: auto;
-  width: 50%;
-  padding: 20px;
+body {
+  background: #0b1220;
+  color: #e5e7eb;
+  line-height: 1.6;
 }
 
-main > h1 {
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 24px;
+  position: sticky;
+  top: 0;
+  background: rgba(11, 18, 32, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.links a {
+  margin-left: 16px;
+  text-decoration: none;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.links a:hover {
+  color: #ffffff;
+}
+
+/* Hero */
+.hero {
+  padding: 70px 24px;
   text-align: center;
-  font-size: 3.5em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 46px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 22px;
+}
+
+/* Buttons */
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.18);
+  color: #e5e7eb;
+  transition: transform 0.1s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.primary {
+  background: linear-gradient(135deg, #2563eb, #7c3aed);
+  border: none;
+}
+
+/* Sections */
+.section {
+  padding: 50px 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 18px;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.card h3 {
+  margin-bottom: 8px;
+}
+
+/* Footer */
+.footer {
+  padding: 26px 24px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: #cbd5e1;
 }
